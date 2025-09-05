@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class FriendController {
-
+// hello
     @GetMapping("/add")
     public String validform(Model v)
     {
