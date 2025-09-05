@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<h1 th:if="${age}>=18">you can vote</h1>
+<h1 th:unless="${age}>18">you can not vote  </h1>
+<div th:switch="${isactive}">
+    <p th:case=" 'active'">Active user</p>
+    <p th:case="'inactive'"> Inactive user</p>
+    <p th:case="*"> unknown</p>
+</div>
+
+</body>
+</html>

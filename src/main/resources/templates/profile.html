@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body bgcolor="#696969">
+<h1>hello dosto</h1>
+<p th:text="${username}"></p>
+<p th:text="${country}"></p>
+<ul>
+    <li th:each="x,y:${country}">
+        <span th:style="${y.even} ? 'color:red;' : 'color:green;' " th:text="${x}"></span>
+
+        <th></th>
+    </li>
+
+
+
+</ul>
+<h1 th:text="${ispresent}? 'student is present':'student is absent'" ></h1>
+
+<h1 th:text="${ispresent}?: 'no data found'"></h1>
+
+</body>
+</html>
