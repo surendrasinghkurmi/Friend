@@ -76,5 +76,6 @@ public class FriendsEntity {
     }
 
     public FriendsEntity() {
+
     }
 }
